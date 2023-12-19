@@ -6,6 +6,8 @@ theme:
     scheme: slate
     primary: indigo
     accent: blue
+  logo: logo.png
+  favicon: logo.png
 
 plugins:
   - mkdoxy:
