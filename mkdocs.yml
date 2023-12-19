@@ -18,8 +18,11 @@ theme:
     - navigation.path
     - navigation.prune
     - navigation.top
+    - search.suggest
+    - search.share
 
 plugins:
+  - search
   - mkdoxy:
       projects:
         LemonUI:
