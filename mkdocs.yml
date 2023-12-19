@@ -8,6 +8,16 @@ theme:
     accent: blue
   logo: logo.png
   favicon: logo.png
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
+    - navigation.prune
+    - navigation.top
 
 plugins:
   - mkdoxy:
