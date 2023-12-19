@@ -1,0 +1,17 @@
+site_name: "LemonUI"
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: indigo
+    accent: blue
+
+plugins:
+  - mkdoxy:
+      projects:
+        LemonUI:
+          src-dirs: repos/LemonUI/LemonUI
+          full-doc: true
+          doxy-cfg:
+            FILE_PATTERNS: "*.cs"
