@@ -3,6 +3,12 @@ on:
   push:
   pull_request:
 
+permissions:
+  # pages
+  pages: write
+  # idk what this is but actions/deploy-pages needs it
+  id-token: write
+
 jobs:
   docs:
     runs-on: ubuntu-22.04
@@ -16,3 +22,7 @@ jobs:
       - run: sudo apt-get update && sudo apt-get install doxygen
       - run: pip install -r requirements.txt
       - run: mkdocs build
+      - uses: actions/upload-pages-artifact@v2.0.0
+        with:
+          path: "site"
+      - uses: actions/deploy-pages@v3.0.1
