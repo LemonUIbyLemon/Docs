@@ -1,3 +1,6 @@
 [submodule "repos/LemonUI"]
 	path = repos/LemonUI
 	url = https://github.com/LemonUIbyLemon/LemonUI.git
+[submodule "repos/LemonUI_TS"]
+	path = repos/LemonUI_TS
+	url = https://github.com/LemonUIbyLemon/LemonUI_TS
