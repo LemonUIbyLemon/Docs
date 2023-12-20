@@ -9,15 +9,25 @@ theme:
   logo: logo.png
   favicon: logo.png
   features:
+    # instant navigation with xhr
     - navigation.instant
+    # show the progress of the xhr loading
     - navigation.instant.progress
+    # update the url with the current section
     - navigation.tracking
+    # show the navigation tabs
     - navigation.tabs
+    # keep the tabs visible when possible
     - navigation.tabs.sticky
+    # show the path of the current page
     - navigation.path
+    # reduce the size of the pages only including what's needed
     - navigation.prune
+    # add a back to the top button
     - navigation.top
+    # enable search suggestions
     - search.suggest
+    # added button to share the current article
     - search.share
 
 plugins:
