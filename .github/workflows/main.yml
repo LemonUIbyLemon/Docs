@@ -1,0 +1,16 @@
+name: Main
+on:
+  push:
+  pull_request:
+
+jobs:
+  docs:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - uses: actions/setup-python@v5.0.0
+        with:
+          python-version: "3.11"
+      - run: apt update && apt instal doxygen
+      - run: pip install -r requirements.txt
+      - run: mkdocs build
